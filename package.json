@@ -1,0 +1,27 @@
+{
+  "name": "tavern-games",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js -e js,hbs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TZawalich/tavern_games.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TZawalich/tavern_games/issues"
+  },
+  "homepage": "https://github.com/TZawalich/tavern_games#readme",
+  "description": ""
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tavern Games</title>
+        <link rel="icon" href="/img/favicon.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div id="tavern_floor">
+            <h1>&THORN;e Auld Tavern</h1>
+            <div class="game_select">
+                <div>
+                    <div id="dragons_hoard" class="room_entry room_entry_live">
+                        <p>Dragon's Hoard</p>
+                        <img src="./img/dragon_400.png" height="400" width="396" alt="dragon on a coin icon"/>
+                    </div>
+                    <div id="game_rules_button_dragons_hoard" class="game_rules_button">Rules</div>
+                </div>
+                <div>
+                    <div id="liars_dice" class="room_entry room_entry_live">
+                        <p>Liar's Dice</p> 
+                        <img src="./img/dice_400.png" height="400" width="396" alt="dragon on a coin icon"/>
+                    </div>
+                    <div id="game_rules_button_liars_dice" class="game_rules_button">Rules</div>
+                </div>
+                <div>
+                    <div id="chariot_racing" class="room_entry disabled">Chariot Racing</div>
+                    <div id="game_rules_button_chariot_racing" class="game_rules_button disabled">Rules</div>
+                </div>
+                <div>
+                    <div id="goblins_eye" class="room_entry disabled">Goblin's Eye</div>
+                    <div id="game_rules_button_goblins_eye" class="game_rules_button disabled">Rules</div>
+                </div>
+                <div>
+                    <div id="skeleton_bones" class="room_entry disabled">Skeleton's Bones</div>
+                    <div id="game_rules_button_skeleton_bones" class="game_rules_button disabled">Rules</div>
+                </div>
+            </div>
+            <div class="github_link"><a target="_blank" href="#">Check the project out on Github</a></div>
+
+            <div id="game_rules_wrapper" class="hidden">
+                <div id="game_rules">
+                    <div id="game_rules_close">Close  X</div>
+                    <div id="game_rules_inner"></div>
+                </div>
+            </div>
+        </div>
+
+       <div id="room_modal" class="room_modal centered-form hidden">
+            <div class="centered-form__box">
+                <div id="modal_close">X</div>
+                <h1>Join Game</h1>
+                <div id="room_form">
+                    <label>Game</label>
+                    <input id="game_type" data-game-name="" type="text" name="game" value="" readonly>
+                    <label>Display Name</label>
+                    <input  id="username" type="text" name="username" placeholder="Display name" required>
+                    <label>Room</label>
+                    <input id="room" type="text" name="room" placeholder="Room" required>
+                    <button id="join_button">Join</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/entry_modal.js"> </script>
+    <script src="/js/all_game_rules.js"></script>
+</html> 
