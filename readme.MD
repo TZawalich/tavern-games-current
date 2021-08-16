@@ -1,6 +1,8 @@
 # Tavern Games
 
 ## Description
+Check out the project here: https://tavern-games.herokuapp.com
+
 A D&D tavern themed multiplayer game room utilizing socket.io. 
 
 Comes with in game text chat, turn based mutliplayer tavern games, back-end user management, game state management, and support for both player and game observer users. 
