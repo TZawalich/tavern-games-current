@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TZawalich/tavern_games.git"
+    "url": "git+https://github.com/TZawalich/tavern-games-current.git"
   },
   "bugs": {
     "url": "https://github.com/TZawalich/tavern_games/issues"
   },
-  "homepage": "https://github.com/TZawalich/tavern_games#readme",
+  "homepage": "https://github.com/TZawalich/tavern-games-current#readme",
   "description": ""
 }
